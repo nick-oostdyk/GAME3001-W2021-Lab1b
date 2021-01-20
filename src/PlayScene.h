@@ -7,9 +7,10 @@
 #include "Label.h"
 #include "SpaceShip.h"
 
-class PlayScene : public Scene
-{
-public:
+#include "Target.h"
+
+class PlayScene : public Scene {
+	public:
 	PlayScene();
 	~PlayScene();
 
@@ -20,19 +21,20 @@ public:
 	virtual void handleEvents() override;
 	virtual void start() override;
 
-	
-private:
+
+	private:
 	// IMGUI Function
 	void GUI_Function() const;
 	std::string m_guiTitle;
-	
+
 	glm::vec2 m_mousePosition;
 
-	SpaceShip* m_pSpaceShip;
-	
-	
+	SpaceShip *m_pSpaceShip;
+	Target *m_pTarget;
+
+
 	// UI Items
-	
+
 };
 
 #endif /* defined (__PLAY_SCENE__) */

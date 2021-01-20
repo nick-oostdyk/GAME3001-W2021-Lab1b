@@ -19,8 +19,18 @@ public:
 	void clean() override;
 
 private:
-
 	
 };
 
 #endif /* defined (__SPACE_SHIP__) */
+
+
+struct Foo {
+
+	int val;
+};
+
+struct Bar {
+
+	Foo fooArr[2];
+};

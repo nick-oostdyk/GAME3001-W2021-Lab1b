@@ -21,7 +21,6 @@ class PlayScene : public Scene {
 	virtual void handleEvents() override;
 	virtual void start() override;
 
-
 	private:
 	// IMGUI Function
 	void GUI_Function() const;
